@@ -17,11 +17,10 @@ struct ContentView: View {
 var backgroundGradient: some View {
     LinearGradient(
         gradient: Gradient(colors: [
-            Color(red: 0.01, green: 0.1, blue: 0.05),
-            Color(red: 0.05, green: 0.2, blue: 0.1)
+            Color(red: 0.10, green: 0.05, blue: 0.18),
+            Color.white
         ]),
-        startPoint: .top,
-        endPoint: .bottom
+        startPoint: .topLeading,
+        endPoint: .bottomTrailing
     ).ignoresSafeArea()
 }
-
